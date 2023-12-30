@@ -30,6 +30,6 @@ topology:
       kind: bridge
        
   links:
-   - endpoints: ["router1:eth1", "br-clab:eth1"]
-   - endpoints: ["PC1:eth1", "br-clab:eth2"]
-   - endpoints: ["PC3:eth1", "br-clab:eth3"]
+   - endpoints: ["br-clab:eth1", "router1:eth1"]
+   - endpoints: ["br-clab:eth2", "PC1:eth1"]
+   - endpoints: ["br-clab:eth3", "PC3:eth1"]
