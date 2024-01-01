@@ -21,7 +21,7 @@ topology:
     
     PC3:
       kind: linux
-      image: praqma/network-multitool:extra
+      image: praqmanetmanag
       exec:
       - ip -6 route del default dev eth0
       - ip -6 route add default via 2001:BD4:ABCD:AAAA:BBBB:CCCC:1:1
