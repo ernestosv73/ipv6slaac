@@ -31,6 +31,7 @@ Descripci√≥n del entorno de trabajo, archivos necesarios y deploy de la Topolog√
 
 
      docker network create \
+  
        --driver bridge \
        --opt "com.docker.network.bridge.name"="br-clab1" \
      redlan
