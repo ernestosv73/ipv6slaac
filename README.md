@@ -11,17 +11,7 @@ Descripci√≥n del entorno de trabajo, archivos necesarios y deploy de la Topolog√
 - Se crea una VM con sistema operativo Ubuntu Server 22.04.3 con Docker engine
 
 - Se instala Containerlab siguiendo instrucciones desde https://containerlab.dev/install/
-
-
-
-
-
-    
-## Deployment Docker Kaliipv6
-
-- Descargar la imagen del Docker Kaliipv6 desde https://drive.google.com/file/d/1sUkIsvTK4-fJLdO2g5RqtSPhDNcfVc_4/view?usp=sharing
-
-- Subir la imagen kaliipv6.docker al servidor Ubuntu y cargar el docker con el comando "docker load -i kaliipv6.docker"
+  
 
 ## Deployment Topologia ipv6slaac.yml
 
@@ -34,7 +24,7 @@ Descripci√≥n del entorno de trabajo, archivos necesarios y deploy de la Topolog√
   
        --driver bridge \
        --opt "com.docker.network.bridge.name"="br-clab1" \
-     redlan
+     lan
 
 Dentro del directorio ipv6slaac, ejecutar el archivo ipv6slaac.yml con el siguiente comando:
 
