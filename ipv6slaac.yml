@@ -1,5 +1,7 @@
 name: ipv6slaac
-
+mgmt:
+  network: lan
+  bridge: br-clab1
 topology:
   nodes:
     router1:
