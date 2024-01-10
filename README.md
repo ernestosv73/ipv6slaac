@@ -16,6 +16,7 @@ Descripci√≥n del entorno de trabajo, archivos necesarios y deploy de la Topolog√
 ## Deployment Topologia ipv6slaac.yml
 
 - Enable IPv6 para lo cual se debe editar el archivo daemon.json ubicado en el directorio /etc/docker y agregar:
+  
     {
        "ipv6": true,
     }
