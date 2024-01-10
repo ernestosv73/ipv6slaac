@@ -17,9 +17,11 @@ Descripci√≥n del entorno de trabajo, archivos necesarios y deploy de la Topolog√
 
 - Enable IPv6 para lo cual se debe editar el archivo daemon.json ubicado en el directorio /etc/docker y agregar:
   
-    {
-       "ipv6": true,
-    }
+      {
+  
+         "ipv6": true,
+  
+      }
 
 - Luego reiniciar el servicio docker con el comando: systemctl restart docker
     
