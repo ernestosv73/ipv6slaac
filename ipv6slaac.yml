@@ -16,9 +16,11 @@ topology:
     
     PC1:
       kind: linux
-      image: docker.io/esanchezv/kaliipv6v2:latest
+      image: esanchezv/bettercapweb:latest
       exec:
       - ip -6 route del default dev eth0
+      ports:
+        - 8081:8081/tcp
           
     PC2:
       kind: linux
