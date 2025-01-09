@@ -1,7 +1,7 @@
 name: ipv6slaac
-mgmt:
-  network: lan
-  bridge: br-clab1
+#mgmt:
+  #network: lan
+  #bridge: br-clab1
 topology:
   nodes:
     router1:
@@ -20,17 +20,17 @@ topology:
       exec:
       - ip -6 route del default dev eth0
           
-    PC3:
+    PC2:
       kind: linux
-      image: praqma/network-multitool:extra
+      image: bettercap/bettercap:latest
       exec:
       - ip -6 route del default dev eth0
       
 
-    br-clab1:
-      kind: bridge
+    #br-clab1:
+      #kind: bridge
        
   links:
-   - endpoints: ["br-clab1:eth1", "router1:eth1"]
-   - endpoints: ["br-clab1:eth2", "PC1:eth1"]
-   - endpoints: ["br-clab1:eth3", "PC3:eth1"]
+   - endpoints: ["router1:eth1", "PC1:eth1"]
+   - endpoints: ["router1:eth2", "PC2:eth1"]
+   
